@@ -14,12 +14,16 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
     const feniValueEl = inputFieldById('feni-input');
     const feniText = inputTextById('donated-money')
     const balanceText = inputTextById('main-balance');
+    const date = new Date();
+    date.getMonth();
+    date.getHours();
+    date.getMinutes();
     if (isNaN(feniValueEl)) {
         alert('Please Input Amount Of Number');
         return;
     }
     else if(feniValueEl < 0){
-        alert('Please Input a Number');
+        alert('Please Input Valid Number');
         inputFeni.value = '';
         return;
     }
@@ -33,6 +37,17 @@ document.getElementById('donate-btn1').addEventListener('click', function () {
         const newDonatedMoney = totalDonatedMoney;
         donatedMoney.innerText = newDonatedMoney;
         document.getElementById('my_modal_1').showModal();
+        const div = document.createElement('div');
+        div.innerHTML = `<div class="lg:flex flex-col p-6 text-lg font-bold mx-auto h-28 rounded-lg container mt-6 w-3/4 border-2 border-slate-200">
+                           <p>${feniValueEl} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+                           <p class="text-base text-text-color font-normal">Date: ${date}</p>
+                           </div>
+                           
+
+        `
+        document.getElementById('transaction-histryBtn').classList.add('hidden');
+        const historySection = document.getElementById('history-section');
+        historySection.appendChild(div);
         inputFeni.value = '';
     }
 
@@ -46,6 +61,10 @@ document.getElementById('donate-btn2').addEventListener('click', function () {
     const feniValueEl = inputFieldById('noakhali-input');
     const feniText = inputTextById('donated-money2');
     const balanceText = inputTextById('main-balance');
+    const date = new Date();
+    date.getMonth();
+    date.getHours();
+    date.getMinutes();
     if (isNaN(feniValueEl)) {
         alert('Please Input Amount Of Number');
         return;
@@ -65,6 +84,17 @@ document.getElementById('donate-btn2').addEventListener('click', function () {
         const newDonatedMoney = totalDonatedMoney;
         donatedMoneyNoakhali.innerText = newDonatedMoney;
         document.getElementById('my_modal_1').showModal();
+        const div = document.createElement('div');
+        div.innerHTML = `<div class="lg:flex flex-col p-6 text-lg font-bold mx-auto h-28 rounded-lg container mt-6 w-3/4 border-2 border-slate-200">
+                           <p>${feniValueEl} Taka is Donated for Flood Relief at Noakhali, Bangladesh</p>
+                           <p class="text-base text-text-color font-normal">Date: ${date}</p>
+                           </div>
+                           
+
+        `
+        document.getElementById('transaction-histryBtn').classList.add('hidden');
+        const historySection = document.getElementById('history-section');
+        historySection.appendChild(div);
         inputNoakhali.value = '';
     }
 
@@ -80,6 +110,10 @@ document.getElementById('donate-btn3').addEventListener('click', function () {
     const feniValueEl = inputFieldById('input-quota');
     const feniText = inputTextById('donated-money3')
     const balanceText = inputTextById('main-balance');
+    const date = new Date();
+    date.getMonth();
+    date.getHours();
+    date.getMinutes();
     if (isNaN(feniValueEl)) {
         alert('Please Input Amount Of Number');
         return;
@@ -99,6 +133,17 @@ document.getElementById('donate-btn3').addEventListener('click', function () {
         const newDonatedMoney = totalDonatedMoney;
         donatedMoneyQuota.innerText = newDonatedMoney;
         document.getElementById('my_modal_1').showModal();
+        const div = document.createElement('div');
+        div.innerHTML = `<div class="lg:flex flex-col p-6 text-lg font-bold mx-auto h-28 rounded-lg container mt-6 w-3/4 border-2 border-slate-200">
+                           <p>${feniValueEl} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+                           <p class="text-base text-text-color font-normal">Date: ${date}</p>
+                           </div>
+                           
+
+        `
+        document.getElementById('transaction-histryBtn').classList.add('hidden');
+        const historySection = document.getElementById('history-section');
+        historySection.appendChild(div);
         inputQuota.value = '';
     }
 
