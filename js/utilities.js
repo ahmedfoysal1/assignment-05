@@ -23,7 +23,7 @@ function showColor(id){
     document.getElementById('donation-btn').classList.remove('bg-bg-color');
     document.getElementById('donation-history').classList.remove('bg-bg-color');
     // show color 
-    document.getElementById(id).classList.add('bg-bg-color')
+    document.getElementById(id).classList.add('bg-bg-color');
 }
 // const feniValue = inputFeni.value;
 // const prFeniValue = parseFloat(feniValue);

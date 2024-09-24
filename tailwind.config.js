@@ -1,7 +1,7 @@
 module.exports = {
     theme: {
       fontFamily: {
-        'lexend': [ "Lexend", "sans-serif"],
+        'lexend': [ 'Lexend, sans-serif'],
         
       }
     }
