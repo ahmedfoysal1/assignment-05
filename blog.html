@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh|Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <!-- font family end  -->
     <script>
         tailwind.config = {
             theme: {
@@ -31,7 +27,7 @@
     </script>
 </head>
 
-<body>
+<body id="body">
     <header class="top-0 sticky"></header>
     <nav class="flex justify-between items-center lg:h-24 mx-auto p-4 -mt-1 lg:gap-10  bg-nav-bg">
         <div>
@@ -51,35 +47,35 @@
     </header>
     <main>
         <section class="container mx-auto space-y-2">
-            <p class="text-5xl font-bold mb-4 mt-10">Imortant Faq <i class="fa-regular fa-comment"></i></p>
+            <p class="text-4xl lg:text-5xl font-bold mb-4 mt-10">Imortant Faq <i class="fa-regular fa-comment"></i></p>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="lg:w-2/3 text-text-color">Dom Means Document Object Model.It Works As a tree of Object.By DOM We can interact and Manipulate the HTML and CSS of a Webpage.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="lg:w-2/3 text-text-color">To Select a element from a DOM we need to set a id or class in the item what we need to target and select it by getElementId/Class and Have to add addEventListener for funtionality</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                <div class="collapse-title text-xl font-bold">What is event delegation in the context of the DOM, and
                     why is it useful?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="lg:w-2/3 text-text-color">By Event delegation we can select a single event listener and get a specific child from parent.Its Useful Because we can attach a single event listener to a parent. This reduces memory usage and improves performance.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles
                     using the DOM?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="lg:w-2/3 text-text-color">First Of all need to set id/class to target element and get id through getElementId and then we can style it like document.getElementId().body.style.___=' '; </p>
                 </div>
             </div>
         </section>
